@@ -1,25 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Body from './Body';
+import Footer from './Footer';
+import Nav from './Nav';
 
+
+const content = "fdsafa dasfa fdasf fasdfokosdf oadskfaosdf ladsfkjsaljk fasdlfkjdsklf lfksjdaflksjdf fjdaslkfjslkjdf laksdfjlkfj fdsafa dasfa fdasf fasdfokosdf oadskfaosdf ladsfkjsaljkfasdlfkjdsklf lfksjdaflksjdf fjdaslkfjslkjdf laksdfjlkfj fdsafa dasfa fdasf fasdfokosdf oadskfaosdf ladsfkjsaljkfasdlfkjdsklf lfksjdaflksjdf fjdaslkfjslkjdf laksdfjlkfj"
+const headerContent = 'Amazing Web Developer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Header headerContent= {headerContent}/>
+      <Nav/>
+      <Body content= {content}/>
+      <Footer />
+    </React.Fragment>
   );
 }
 
