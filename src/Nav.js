@@ -27,6 +27,10 @@ class Nav extends React.Component{
         );
     };
     
+    // Arrow function vaiable never loses the value of 'this' keyword
+    // Arrow functions operate a little slower, so the bind variable in your constructor
+    // is what would be used if you are working on a big project. 
+    // Helper Function Example Below
     _toggleMenu = ()=>{
         this.setState({
             isOpen: !this.state.isOpen
