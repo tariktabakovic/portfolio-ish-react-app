@@ -9,14 +9,20 @@ import Nav from './Nav';
 
 const content = "fdsafa dasfa fdasf fasdfokosdf oadskfaosdf ladsfkjsaljk fasdlfkjdsklf lfksjdaflksjdf fjdaslkfjslkjdf laksdfjlkfj fdsafa dasfa fdasf fasdfokosdf oadskfaosdf ladsfkjsaljkfasdlfkjdsklf lfksjdaflksjdf fjdaslkfjslkjdf laksdfjlkfj fdsafa dasfa fdasf fasdfokosdf oadskfaosdf ladsfkjsaljkfasdlfkjdsklf lfksjdaflksjdf fjdaslkfjslkjdf laksdfjlkfj"
 const headerContent = 'Amazing Web Developer';
+const linkNames = [
+  'Home',
+  'Portfolio',
+  'Contact'
+];
+
 function App() {
   return (
-    <React.Fragment>
+    <div className= 'container-fluid'>
       <Header headerContent= {headerContent}/>
-      <Nav/>
+      <Nav linkNames = {linkNames}/>
       <Body content= {content}/>
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 
